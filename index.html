@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Base64 Image Encoder</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Paste Image to Base64</h1>
+    <div id="editable-container">
+      <div contenteditable="true" placeholder="Use `CTRL + V` to paste screenshot"></div>
+    </div>
+
+    <div id="result" hidden>
+      <div>
+        <h3>input image</h3>
+        <img id="preview" />
+      </div>
+      <div>
+        <h3>Base64 string</h3>
+        <textarea id="output-textarea"></textarea>
+      </div>
+    </div>
+    <!-- sankou https://codepen.io/GapRay/pen/MGjWqY -->
+    <script src="index.js"></script>
+  </body>
+</html>

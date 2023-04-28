@@ -1,0 +1,49 @@
+body {
+  font-family: sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1em;
+  color: #fff;
+  background: #333;
+}
+
+h1 {
+  margin: 0 0 0.5em;
+}
+
+#editable-container {
+  padding: 1em;
+  color: #333;
+  background: #fff;
+}
+
+#editable-container > div {
+  border: 6px dashed #333;
+  padding: 1em;
+  min-height: 100px;
+  max-height: 200px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+#editable-container > div:focus {
+  outline: 0;
+  border-color: steelblue;
+}
+
+#editable-container > div:before {
+  content: attr(placeholder);
+  color: gray;
+  display: block;
+}
+
+#preview {
+  margin-top: 1em;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+#output-textarea {
+  width: 80%;
+  height: 200px;
+}
