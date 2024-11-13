@@ -7,7 +7,7 @@ reader.addEventListener("load", () => {
   const base64img = reader.result;
   document.getElementById("preview").setAttribute("src", base64img);
   document.getElementById("output-textarea").innerText = base64img;
-  document.getElementById("output-textarea-img").innerText = `<img style="width: 80%;" src="${base64img}">`;
+  document.getElementById("output-textarea-img").innerText = `<img style="width: 600px;" src="${base64img}">`;
 });
 
 
